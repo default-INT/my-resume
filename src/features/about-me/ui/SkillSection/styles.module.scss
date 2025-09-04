@@ -1,0 +1,18 @@
+.root {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.title {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.titleText {
+  --text-color: var(--gray-darker);
+
+  color: var(--text-color);
+  font-weight: 500;
+}

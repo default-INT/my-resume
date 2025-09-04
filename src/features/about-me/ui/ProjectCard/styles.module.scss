@@ -1,0 +1,73 @@
+@use '@/shared/styles/mixins.scss' as *;
+
+.root {
+  --background-color: var(--gray-lightest-2);
+
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  background: var(--background-color);
+  padding: 24px;
+}
+
+.previewImg {
+  width: 180px;
+  height: 140px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.about {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.name {
+  --text-color: var(--gray-darker);
+
+  color: var(--text-color);
+  font-weight: 500;
+}
+
+.description {
+  --text-color: var(--gray-default);
+
+  color: var(--text-color);
+  font-size: 14px;
+}
+
+.actions {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.icon {
+  --background-circle-color: var(--secondary-lighter);
+  --icon-path-color: var(--secondary-default);
+
+  rect {
+    fill: var(--background-circle-color);
+  }
+
+  path {
+    fill: var(--icon-path-color);
+  }
+}
+
+.link {
+  --link-color: var(--secondary-default);
+  --link-color-hover: var(--secondary-light);
+
+  color: var(--link-color);
+  font-weight: 500;
+
+  a:hover {
+    color: var(--link-color-hover);
+  }
+
+  @include max-mobile-sm() {
+    font-size: 12px;
+  }
+}

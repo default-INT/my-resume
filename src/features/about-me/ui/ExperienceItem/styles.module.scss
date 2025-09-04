@@ -1,0 +1,109 @@
+@use "@/shared/styles/mixins.scss" as *;
+
+.root {
+  --background-color: var(--gray-lightest-2);
+  --active-background-color: var(--primary-lightest);
+
+  display: flex;
+  gap: 16px;
+  width: 100%;
+  padding: 16px 24px;
+  background: var(--background-color);
+
+  &:first-child {
+    border-radius: 10px 10px 0 0;
+  }
+
+  &:last-child {
+    border-radius: 0 0 10px 10px;
+  }
+
+  @include max-mobile-sm() {
+    flex-direction: column;
+  }
+}
+
+.active {
+  background: var(--active-background-color);
+}
+
+.logo {
+  width: 40px;
+  height: 40px;
+  border-radius: 10px;
+
+  @include max-mobile-sm() {
+    width: 60px;
+    height: 60px;
+  }
+}
+
+.content {
+  display: flex;
+  flex: 1;
+  justify-content: space-between;
+  gap: 8px;
+
+
+  @include max-mobile-sm() {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.locationAndPeriod {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 6px;
+
+  @include max-tablet-md() {
+    justify-content: space-between;
+  }
+
+  @include max-mobile-sm() {
+    flex-direction: row-reverse;
+    width: 100%;
+  }
+}
+
+.position {
+  --position-text-color: var(--gray-default);
+
+  color: var(--position-text-color);
+  font-size: 14px;
+}
+
+.name {
+  --name-text-color: var(--gray-darker);
+
+  color: var(--name-text-color);
+}
+
+.locationContainer {
+  display: flex;
+  align-items: center;
+  gap: 2px;
+}
+
+.location {
+  --text-color: var(--gray-default);
+
+  color: var(--text-color);
+  font-size: 12px;
+  white-space: nowrap;
+
+
+  @include max-tablet-md() {
+    font-size: 10px;
+    justify-content: right;
+    flex-direction: column;
+    gap: 2px;
+  }
+}

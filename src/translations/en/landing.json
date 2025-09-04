@@ -1,0 +1,132 @@
+{
+  "Home": {
+    "title": "Title page"
+  },
+  "about_me_sidebar": {
+    "full_name": "Yauheni Trafimau",
+    "position": "Software Engineer",
+    "contacts": {
+      "list": {
+        "email": "Email",
+        "phone": "Phone",
+        "address": "Address"
+      }
+    },
+    "socials": {
+      "title": "Socials",
+      "list": {
+        "instagram": "Instagram",
+        "telegram": "Telegram",
+        "linkedin": "LinkedIn",
+        "github": "GitHub"
+      }
+    },
+    "languages": {
+      "title": "Languages",
+      "list": {
+        "en": "English",
+        "by": "Belarusian",
+        "ru": "Russian"
+      }
+    }
+  },
+  "experience": {
+    "title": "Experience",
+    "period": {
+      "present": "Present"
+    }
+  },
+  "projects": {
+    "title": "Latest projects",
+    "descriptions": {
+      "roolz": "Roolz is a logistics platform that connects shippers and carriers, enabling cargo matching, bidding, and efficient shipment management. It optimizes costs and time while supporting both spot and long-term partnerships.",
+      "aibohealth": "Aibolit is a platform that helps surgeons manage surgery cases, work with CT files, and generate 3D models. It also enables uploading and editing surgery videos, which can be AI-annotated by phases and events, making it easier to review similar cases and create detailed reports with analytics.",
+      "getswap": "GetSwap is an app for creating item cards, uploading photos, and exchanging items with others. It offers easy browsing, category filters, and built-in chat to arrange swaps.",
+      "ecw": "Education Cannot Wait is a service for remote learning where users register as Teachers or Students. Teachers create groups, assign and track tasks, while students complete and submit them for approval."
+    },
+    "status": {
+      "in_progress": "In Progress"
+    }
+  },
+  "skills": {
+    "title": "Skills",
+    "sections": {
+      "soft": "Soft",
+      "develop": "Development"
+    }
+  },
+  "educations": {
+    "title": "Education",
+    "list": {
+      "gstu": {
+        "title": "Gomel Technical University",
+        "position": "Bachelor's degree, Software engineer"
+      }
+    }
+  },
+  "seo": {
+    "title": "Yauheni Trafimau - React / React Native Developer in Minsk | Hire Software Developer",
+    "description": "Experienced React and React Native developer in Minsk, Belarus. Senior Software Engineer with 4+ years of experience. Available for hire for React.js, React Native, Next.js, and TypeScript projects. Full-stack development services.",
+    "keywords": [
+      "React developer",
+      "React Native developer",
+      "React / React Native developer",
+      "Software developer Minsk",
+      "Hire software developer Minsk",
+      "Frontend developer Belarus",
+      "React developer Belarus",
+      "React Native developer Belarus",
+      "TypeScript developer",
+      "Next.js developer",
+      "JavaScript developer",
+      "Mobile app developer",
+      "Web developer Minsk",
+      "Senior React developer",
+      "Freelance developer Minsk",
+      "React consultant",
+      "Mobile development Belarus",
+      "Frontend engineer Minsk",
+      "Full-stack developer",
+      "Yauheni Trafimau",
+      "React specialist Belarus"
+    ],
+    "open_graph": {
+      "title": "Yauheni Trafimau - Senior React / React Native Developer | Available for Hire",
+      "description": "Senior React and React Native developer in Minsk with 4+ years of experience. Specialized in React.js, React Native, Next.js, TypeScript. Available for hire for web and mobile development projects.",
+      "site_name": "Yauheni Trafimau - React Developer Portfolio"
+    },
+    "twitter": {
+      "title": "Yauheni Trafimau - React / React Native Developer in Minsk",
+      "description": "Senior React and React Native developer available for hire. 4+ years of experience in web and mobile development.",
+      "creator": "@trafimau1806",
+      "site": "@trafimau1806"
+    },
+    "facebook": {
+      "title": "Yauheni Trafimau - Senior React / React Native Developer | Available for Hire",
+      "description": "Senior React and React Native developer in Minsk with 4+ years of experience. Specialized in React.js, React Native, Next.js, TypeScript. Available for hire for web and mobile development projects."
+    },
+    "linkedin": {
+      "title": "Yauheni Trafimau - Senior React / React Native Developer",
+      "description": "Senior React and React Native developer in Minsk, Belarus. 4+ years of experience in web and mobile development. Available for hire.",
+      "profile_url": "https://www.linkedin.com/in/yauheni-trafimau-int/"
+    },
+    "telegram": {
+      "title": "Yauheni Trafimau - React / React Native Developer",
+      "description": "Senior React and React Native developer available for hire. Contact me for web and mobile development projects.",
+      "channel": "@trafimau1806"
+    },
+    "instagram": {
+      "title": "Yauheni Trafimau - React Developer",
+      "description": "Senior React / React Native developer sharing development insights and project updates.",
+      "profile": "@default_int18"
+    },
+    "structured_data": {
+      "name": "Yauheni Trafimau",
+      "alternate_name": "Evgeniy Trofimov",
+      "job_title": "Senior React / React Native Developer",
+      "address_locality": "Minsk",
+      "address_country": "Belarus",
+      "university_name": "Gomel Technical University"
+    }
+  }
+}

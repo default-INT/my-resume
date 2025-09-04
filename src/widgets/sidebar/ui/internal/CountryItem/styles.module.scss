@@ -1,0 +1,25 @@
+.container {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.label {
+  --link-color: var(--gray-dark);
+  --link-color-hover: var(--gray-light);
+
+  color: var(--link-color);
+}
+
+.value {
+  --label-text-color: var(--gray-default);
+
+  font-size: 14px;
+  color: var(--label-text-color)
+}

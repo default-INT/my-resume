@@ -1,0 +1,75 @@
+@use "sass:map";
+
+// Breakpoint values
+$breakpoints: (
+  xs: 320px,          // Mobile Portrait
+  sm: 426px,          // Mobile Landscape
+  md: 577px,          // Tablet Portrait
+  lg: 769px,          // Tablet Landscape
+  xl: 1025px,         // Desktop
+  xxl: 1441px,        // Large Desktop
+  xxxl: 1920px        // Ultra Wide
+);
+
+// Large Desktop and down (≤ 1440px)
+@mixin max-desktop-xxl {
+  @media (max-width: #{map.get($breakpoints, xxl) - 1px}) {
+    @content;
+  }
+}
+
+// Desktop and down (≤ 1024px)
+@mixin max-desktop-xl {
+  @media (max-width: #{map.get($breakpoints, xl) - 1px}) {
+    @content;
+  }
+}
+
+// Tablet Landscape and down (≤ 768px)
+@mixin max-tablet-lg {
+  @media (max-width: #{map.get($breakpoints, lg) - 1px}) {
+    @content;
+  }
+}
+
+// Tablet Portrait and down (≤ 576px)
+@mixin max-tablet-md {
+  @media (max-width: #{map.get($breakpoints, md) - 1px}) {
+    @content;
+  }
+}
+
+// Mobile Landscape and down (≤ 425px)
+@mixin max-mobile-sm {
+  @media (max-width: #{map.get($breakpoints, sm) - 1px}) {
+    @content;
+  }
+}
+
+// Mobile Portrait and down (≤ 319px)
+@mixin max-mobile-xs {
+  @media (max-width: #{map-get($breakpoints, xs) - 1px}) {
+    @content;
+  }
+}
+
+// =============================================================================
+// CUSTOM BREAKPOINT MIXIN
+// =============================================================================
+
+// Custom breakpoint mixin for specific needs
+@mixin breakpoint($min: null, $max: null) {
+  @if $min and $max {
+    @media (min-width: $min) and (max-width: $max) {
+      @content;
+    }
+  } @else if $min {
+    @media (min-width: $min) {
+      @content;
+    }
+  } @else if $max {
+    @media (max-width: $max) {
+      @content;
+    }
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "locations": {
+    "countries": {
+      "by": "Belarus",
+      "bg": "Bulgaria"
+    },
+    "cities": {
+      "minsk": "Minsk",
+      "homel": "Homel",
+      "sofia": "Sofia"
+    }
+  },
+  "skills": {
+    "soft": {
+      "code_quality": "Code quality and precise fulfillment",
+      "mentoring": "Mentoring and code review",
+      "refinement": "Refinement and planning session",
+      "communication": "Communication with customer"
+    }
+  }
+}

@@ -1,0 +1,33 @@
+@use '@/shared/styles/mixins' as *;
+
+.root {
+  --bottom-border-color: var(--gray-lightest-2);
+
+  display: none;
+  width: 100%;
+  padding: 16px 24px;
+  border-bottom: 1px solid var(--bottom-border-color);
+
+  @include max-tablet-lg() {
+    display: flex;
+  }
+}
+
+.button {
+  --icon-color: var(--gray-darker);
+  --button-hover: var(--gray-lightest-2);
+
+  display: flex;
+  align-items: center;
+  padding: 4px;
+  border-radius: 50%;
+  transition: background-color 0.25s ease-out;
+
+  svg {
+    color: var(--icon-color);
+  }
+
+  &:hover {
+    background-color: var(--button-hover);
+  }
+}

@@ -1,0 +1,46 @@
+.root {
+  --card-background-color: var(--gray-lightest-2);
+  --primary-text-color: var(--gray-darker);
+  --secondary-text-color: var(--gray-default);
+
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  background: var(--card-background-color);
+  padding: 12px 24px;
+  border-radius: 8px;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.logo {
+  width: 46px;
+  height: 46px;
+  border-radius: 8px;
+}
+
+.title {
+  font-size: 14px;
+  color: var(--primary-text-color);
+}
+
+.about {
+  display: flex;
+  flex-direction: column;
+  gap: 4px
+}
+
+.position {
+  color: var(--primary-text-color);
+  font-weight: 500;
+}
+
+.datePeriod {
+  font-size: 14px;
+  color: var(--secondary-text-color);
+}

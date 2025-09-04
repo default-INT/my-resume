@@ -1,0 +1,38 @@
+{
+  "name": "my-resume",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "eslint ./src",
+    "lint:fix": "eslint ./src"
+  },
+  "dependencies": {
+    "classnames": "^2.5.1",
+    "next": "15.5.2",
+    "next-intl": "^4.3.6",
+    "react": "19.1.0",
+    "react-dom": "19.1.0",
+    "sass": "^1.92.0"
+  },
+  "devDependencies": {
+    "@eslint/eslintrc": "^3",
+    "@svgr/webpack": "^8.1.0",
+    "@types/node": "^20",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "@typescript-eslint/parser": "^8.42.0",
+    "eslint": "^9",
+    "eslint-config-next": "15.5.2",
+    "eslint-import-resolver-node": "^0.3.9",
+    "eslint-import-resolver-typescript": "^4.4.4",
+    "eslint-plugin-import": "^2.32.0",
+    "eslint-plugin-jsx-a11y": "^6.10.2",
+    "eslint-plugin-react": "^7.37.5",
+    "eslint-plugin-react-hooks": "^5.2.0",
+    "typescript": "^5",
+    "typescript-eslint": "^8.42.0"
+  }
+}
