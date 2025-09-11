@@ -2,6 +2,11 @@
 
 A modern, responsive personal resume website built with Next.js 15, featuring internationalization (i18n) support and a clean, professional design. This project showcases professional experience, skills, projects, and education in an interactive format.
 
+## 🌐 Live Demo
+
+- **English**: [https://default-int.github.io/my-resume/en/](https://default-int.github.io/my-resume/en/)
+- **Russian**: [https://default-int.github.io/my-resume/ru/](https://default-int.github.io/my-resume/ru/)
+
 ## 🚀 Features
 
 - **Internationalization**: Full support for English and Russian languages
