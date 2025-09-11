@@ -1,5 +1,6 @@
 import { memo } from 'react';
 import { useLocale } from 'next-intl';
+import { getAssetPath } from '@/shared/utils/getAssetPath';
 import { Period } from '@/features/about-me/model';
 import { getFormattedDate } from '@/shared/utils/getFormattedDate';
 import styles from './styles.module.scss';
@@ -25,7 +26,7 @@ export const EducationCard = memo((props: Props) => {
       <div className={styles.header}>
         <img
           className={styles.logo}
-          src={logoUrl}
+          src={getAssetPath(logoUrl)}
           alt={title}
         />
         <span className={styles.title}>{title}</span>

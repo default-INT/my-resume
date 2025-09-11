@@ -1,5 +1,6 @@
 import { memo } from 'react';
 import { useTranslations } from 'next-intl';
+import { getAssetPath } from '@/shared/utils/getAssetPath';
 import { Project } from '@/features/about-me/model';
 import { LinkIcon } from '@/shared/assets/icons';
 import styles from './styles.module.scss';
@@ -16,7 +17,7 @@ export const ProjectCard = memo(({ item }: Props) => {
     <div className={styles.root}>
       <img
         className={styles.previewImg}
-        src={logoUrl}
+        src={getAssetPath(logoUrl)}
         alt={id}
       />
       <div className={styles.about}>

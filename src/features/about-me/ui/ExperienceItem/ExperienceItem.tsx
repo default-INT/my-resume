@@ -1,6 +1,7 @@
 import { memo } from 'react';
 import cn from 'classnames';
 import { useTranslations } from 'next-intl';
+import { getAssetPath } from '@/shared/utils/getAssetPath';
 import { Experience } from '@/features/about-me/model';
 import { PinWithoutOutlineIcon } from '@/shared/assets/icons';
 import { DatePeriod } from './ui/DatePeriod';
@@ -26,7 +27,7 @@ export const ExperienceItem = memo(({ item }: Props) => {
   return (
     <div className={cn(styles.root, { [styles.active]: isPresent })}>
       <img
-        src={logoUrl}
+        src={getAssetPath(logoUrl)}
         className={styles.logo}
         alt={name}
       />

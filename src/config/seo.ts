@@ -1,3 +1,4 @@
+import { getAssetPath } from '@/shared/utils/getAssetPath';
 import type { Metadata } from 'next';
 
 interface NextIntlTranslations {
@@ -35,7 +36,7 @@ export const getMetadata = (locale: string, t: NextIntlTranslations): Metadata =
       url: '/',
       images: [
         {
-          url: '/images/avatar.jpeg',
+          url: getAssetPath('/images/avatar.jpeg'),
           width: 400,
           height: 400,
           alt: 'Yauheni Trafimau - React / React Native Developer',
@@ -48,7 +49,7 @@ export const getMetadata = (locale: string, t: NextIntlTranslations): Metadata =
       description: t('twitter.description'),
       creator: t('twitter.creator'),
       site: t('twitter.site'),
-      images: ['/images/avatar.jpeg'],
+      images: [getAssetPath('/images/avatar.jpeg')],
     },
     robots: {
       index: true,
@@ -121,7 +122,7 @@ export const getStructuredData = (locale: string, t: NextIntlTranslations) => ({
     jobTitle: t('structured_data.job_title'),
     description: t('description'),
     url: process.env.NEXT_PUBLIC_SITE_URL || 'https://yauheni-trafimau.dev',
-    image: '/images/avatar.jpeg',
+    image: getAssetPath('/images/avatar.jpeg'),
     email: 'evgeniy.trofimov.int@gmail.com',
     telephone: '+375298174753',
     address: {
