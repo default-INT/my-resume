@@ -4,6 +4,11 @@
   --background-color: var(--gray-lightest-2);
   --active-background-color: var(--primary-lightest);
 
+  @media (prefers-color-scheme: dark) {
+    --background-color: var(--gray-darker);
+    --active-background-color: var(--primary-darker);
+  }
+
   display: flex;
   gap: 16px;
   width: 100%;
@@ -76,12 +81,20 @@
 .position {
   --position-text-color: var(--gray-default);
 
+  @media (prefers-color-scheme: dark) {
+    --position-text-color: var(--gray-light);
+  }
+
   color: var(--position-text-color);
   font-size: 14px;
 }
 
 .name {
   --name-text-color: var(--gray-darker);
+
+  @media (prefers-color-scheme: dark) {
+    --name-text-color: var(--gray-lightest);
+  }
 
   color: var(--name-text-color);
 }
@@ -94,6 +107,10 @@
 
 .location {
   --text-color: var(--gray-default);
+
+  @media (prefers-color-scheme: dark) {
+    --name-text-color: var(--gray-light);
+  }
 
   color: var(--text-color);
   font-size: 12px;

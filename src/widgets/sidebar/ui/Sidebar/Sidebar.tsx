@@ -22,11 +22,14 @@ import styles from './styles.module.scss';
 
 export const Sidebar = () => {
   const t = useTranslations('landing.about_me_sidebar');
+  const commonT = useTranslations('common');
   const [isSidebarVisible, setIsSidebarVisible] = useState(false);
 
   const toggleSidebar = useCallback(() => {
     setIsSidebarVisible(prevState => !prevState);
   }, []);
+
+  const location = `${commonT('locations.cities.minsk')}, ${commonT('locations.countries.by')}`;
 
   return (
     <>
@@ -51,6 +54,9 @@ export const Sidebar = () => {
             )}>
               {t('position')}
             </h2>
+            <h3 className={typographyStyle.h3Regular}>
+              {t('experience')}
+            </h3>
           </div>
           <div className={styles.section}>
             <LinkItem
@@ -62,14 +68,16 @@ export const Sidebar = () => {
             />
             <LinkItem
               icon={PhoneIcon}
+              iconClassName={styles.socialIcon}
               label={t('contacts.list.phone')}
               value='+375 (29) 817-47-53'
               to='tel:+375298174753'
             />
             <LinkItem
               icon={PinIcon}
+              iconClassName={styles.socialIcon}
               label={t('contacts.list.address')}
-              value='Minsk, Belarus'
+              value={location}
               to='https://maps.app.goo.gl/KgbzXXiv2WPtA2fQ6'
               target='_blank'
             />

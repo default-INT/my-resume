@@ -1,10 +1,8 @@
 {
-  "Home": {
-    "title": "Title page"
-  },
   "about_me_sidebar": {
     "full_name": "Yauheni Trafimau",
     "position": "Software Engineer",
+    "experience": "Experience: 4+ years",
     "contacts": {
       "list": {
         "email": "Email",

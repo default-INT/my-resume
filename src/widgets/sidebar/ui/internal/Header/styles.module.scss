@@ -3,6 +3,10 @@
 .root {
   --bottom-border-color: var(--gray-lightest-2);
 
+  @media (prefers-color-scheme: dark) {
+    --bottom-border-color: var(--gray-darker);
+  }
+
   display: none;
   width: 100%;
   padding: 16px 24px;
@@ -16,6 +20,11 @@
 .button {
   --icon-color: var(--gray-darker);
   --button-hover: var(--gray-lightest-2);
+
+  @media (prefers-color-scheme: dark) {
+    --bottom-border-color: var(--gray-darker);
+    --icon-color: var(--gray-lightest-2);
+  }
 
   display: flex;
   align-items: center;

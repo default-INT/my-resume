@@ -2,6 +2,11 @@
   --card-background-color: var(--gray-lightest-2);
   --card-text-color: var(--secondary-default);
 
+  @media (prefers-color-scheme: dark) {
+    --card-background-color: var(--gray-darker);
+    --card-text-color: var(--secondary-light);
+  }
+
   padding: 12px 20px;
   display: flex;
   justify-content: space-between;
@@ -14,10 +19,14 @@
 .column {
   --border-color: var(--gray-lightest);
 
+  @media (prefers-color-scheme: dark) {
+    --border-color: var(--gray-dark);
+  }
+
   flex: 1;
 
   &:not(:last-child) {
-    border-right: 1px solid var(--gray-lightest);
+    border-right: 1px solid var(--border-color);
   }
 }
 

@@ -1,10 +1,8 @@
 {
-  "Home": {
-    "title": "Евгений Трофимов - React / React Native разработчик в Минске"
-  },
   "about_me_sidebar": {
     "full_name": "Евгений Трофимов",
     "position": "Software Engineer",
+    "experience": "Опыт работы: 4+ года",
     "contacts": {
       "list": {
         "email": "Электронная почта",

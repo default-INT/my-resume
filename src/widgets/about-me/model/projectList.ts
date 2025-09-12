@@ -22,6 +22,7 @@ export const projectList: Project[] = [
     id: 'ecw',
     logoUrl: '/images/preview/ecw.png',
     name: 'Education Cannot Wait - ECW',
-    link: 'www.educationcannotwait.org',
+    link: 'https://www.educationcannotwait.org',
+    linkPreview: 'www.educationcannotwait.org',
   },
 ];

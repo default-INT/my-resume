@@ -36,7 +36,7 @@ export const ProjectCard = memo(({ item }: Props) => {
             className={styles.link}
             target='_blank'
           >
-            {link || linkPreview}
+            {linkPreview || link}
           </a>
         ) : <span className={styles.link}>{t('status.in_progress')}</span>}
       </div>

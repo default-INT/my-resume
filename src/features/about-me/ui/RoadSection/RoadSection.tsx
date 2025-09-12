@@ -15,7 +15,7 @@ export const RoadSection = memo((props: PropsWithChildren<Props>) => {
   return (
     <div
       className={styles.root}
-      style={{ '--animation-delay': `${animationIndex * 1}s` } as React.CSSProperties}
+      style={{ '--animation-delay': `${animationIndex}s` } as React.CSSProperties}
     >
       <div className={styles.leftContainer}>
         <div className={styles.circle}>
