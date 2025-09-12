@@ -4,6 +4,11 @@
   --text-color: var(--primary-default);
   --background-color: var(--primary-lighter);
 
+  @media (prefers-color-scheme: dark) {
+    --text-color: var(--primary-lighter);
+    --background-color: var(--primary-dark);
+  }
+
   display: flex;
   align-items: center;
   color: var(--text-color);
@@ -15,6 +20,10 @@
 
 .date {
   --text-color: var(--gray-dark);
+
+  @media (prefers-color-scheme: dark) {
+    --text-color: var(--gray-lighter);
+  }
 
   display: flex;
   gap: 4px;

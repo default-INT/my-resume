@@ -10,8 +10,30 @@
   gap: 8px;
 }
 
+.titleIcon {
+  --icon-fill-color: var(--secondary-lighter);
+  --icon-path-color: var(--secondary-default);
+
+  @media (prefers-color-scheme: dark) {
+    --icon-fill-color: var(--secondary-dark);
+    --icon-path-color: var(--secondary-light);
+  }
+
+  rect {
+    fill: var(--icon-fill-color);
+  }
+
+  path {
+    fill: var(--icon-path-color);
+  }
+}
+
 .titleText {
   --text-color: var(--gray-darker);
+
+  @media (prefers-color-scheme: dark) {
+    --text-color: var(--gray-lightest);
+  }
 
   color: var(--text-color);
   font-weight: 500;

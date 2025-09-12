@@ -32,6 +32,10 @@
 
 .softCard {
   --card-text-color: var(--primary-default);
+
+  @media (prefers-color-scheme: dark) {
+    --card-text-color: var(--primary-light);
+  }
 }
 
 .devSkillsSection {
@@ -49,6 +53,16 @@
 
   @include max-mobile-sm() {
     grid-template-columns: 1fr;
+  }
+}
+
+.softIcon {
+  --icon-path-color: var(--primary-default);
+  --icon-fill-color: var(--primary-lighter);
+
+  @media (prefers-color-scheme: dark) {
+    --icon-fill-color: var(--primary-dark);
+    --icon-path-color: var(--primary-light);
   }
 }
 

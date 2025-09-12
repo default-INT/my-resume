@@ -11,15 +11,22 @@
 }
 
 .label {
-  --link-color: var(--gray-dark);
-  --link-color-hover: var(--gray-light);
+  --label-color: var(--gray-dark);
 
-  color: var(--link-color);
+  @media (prefers-color-scheme: dark) {
+    --label-color: var(--gray-lighter);
+  }
+
+  color: var(--label-color);
 }
 
 .value {
-  --label-text-color: var(--gray-default);
+  --value-text-color: var(--gray-default);
+
+  @media (prefers-color-scheme: dark) {
+    --value-text-color: var(--gray-light);
+  }
 
   font-size: 14px;
-  color: var(--label-text-color)
+  color: var(--value-text-color)
 }

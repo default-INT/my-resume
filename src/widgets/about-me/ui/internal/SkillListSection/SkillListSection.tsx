@@ -25,6 +25,7 @@ export const SkillListSection = async ({ animationIndex }: Props) => {
       <SkillSection
         title={t('skills.sections.soft')}
         icon={SoftIcon}
+        iconClassName={styles.softIcon}
         className={styles.softSection}
       >
         {softSkills.map((list, idx) => (

@@ -3,6 +3,10 @@
 .root {
   --background-color: var(--gray-lightest-2);
 
+  @media (prefers-color-scheme: dark) {
+    --background-color: var(--gray-darker);
+  }
+
   display: flex;
   flex-direction: column;
   gap: 16px;
@@ -26,12 +30,20 @@
 .name {
   --text-color: var(--gray-darker);
 
+  @media (prefers-color-scheme: dark) {
+    --text-color: var(--gray-lightest);
+  }
+
   color: var(--text-color);
   font-weight: 500;
 }
 
 .description {
   --text-color: var(--gray-default);
+
+  @media (prefers-color-scheme: dark) {
+    --text-color: var(--gray-light);
+  }
 
   color: var(--text-color);
   font-size: 14px;
@@ -47,6 +59,11 @@
   --background-circle-color: var(--secondary-lighter);
   --icon-path-color: var(--secondary-default);
 
+  @media (prefers-color-scheme: dark) {
+    --background-circle-color: var(--secondary-dark);
+    --icon-path-color: var(--secondary-light);
+  }
+
   rect {
     fill: var(--background-circle-color);
   }
@@ -57,13 +74,18 @@
 }
 
 .link {
-  --link-color: var(--secondary-default);
+  --label-color: var(--secondary-default);
   --link-color-hover: var(--secondary-light);
 
-  color: var(--link-color);
+  @media (prefers-color-scheme: dark) {
+    --label-color: var(--secondary-light);
+    --link-color-hover: var(--secondary-default);
+  }
+
+  color: var(--label-color);
   font-weight: 500;
 
-  a:hover {
+  &:hover {
     color: var(--link-color-hover);
   }
 
