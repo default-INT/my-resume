@@ -8,6 +8,7 @@ import InstagramIcon from './instagram.svg';
 import LinkedInIcon from './linkedin.svg';
 import LinkIcon from './link.svg';
 import MailIcon from './mail.svg';
+import MembersIcon from './members.svg';
 import PhoneIcon from './phone.svg';
 import PinIcon from './pin.svg';
 import PinWithoutOutlineIcon from './pin-without-outline.svg';
@@ -26,6 +27,7 @@ export {
   LinkedInIcon,
   LinkIcon,
   MailIcon,
+  MembersIcon,
   PhoneIcon,
   PinIcon,
   PinWithoutOutlineIcon,

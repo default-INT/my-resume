@@ -3,6 +3,7 @@ import { NextIntlClientProvider } from 'next-intl';
 import { Roboto } from 'next/font/google';
 import { getMessages, setRequestLocale, getTranslations } from 'next-intl/server';
 import { notFound } from 'next/navigation';
+import { Drawer } from '@/shared/components/Drawer';
 import { routing } from '@/config/i18n/routing';
 import { getMetadata, getStructuredData, getSocialMetaTags } from '@/config/seo';
 import type { Metadata, Viewport } from 'next';
@@ -64,6 +65,7 @@ export default async function RootLayout({ children, params }: Props) {
           messages={messages}
         >
           {children}
+          <Drawer/>
         </NextIntlClientProvider>
       </body>
     </html>

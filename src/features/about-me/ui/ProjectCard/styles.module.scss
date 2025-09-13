@@ -2,16 +2,26 @@
 
 .root {
   --background-color: var(--gray-lightest-2);
+  --background-color-hover: var(--gray-lightest);
 
   @media (prefers-color-scheme: dark) {
     --background-color: var(--gray-darker);
+    --background-color-hover: var(--gray-dark);
   }
 
+  all: unset;
   display: flex;
   flex-direction: column;
   gap: 16px;
   background: var(--background-color);
   padding: 24px;
+  transition: scale 0.3s ease-in-out, background-color 0.3s ease-in-out;
+  cursor: pointer;
+
+  &:hover {
+    scale: 1.02;
+    background-color: var(--background-color-hover);
+  }
 }
 
 .previewImg {
@@ -83,6 +93,7 @@
   }
 
   color: var(--label-color);
+  font-size: 14px;
   font-weight: 500;
 
   &:hover {

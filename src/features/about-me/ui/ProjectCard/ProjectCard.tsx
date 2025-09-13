@@ -1,8 +1,11 @@
-import { memo } from 'react';
+'use client';
+import { memo, useCallback } from 'react';
 import { useTranslations } from 'next-intl';
 import { getAssetPath } from '@/shared/utils/getAssetPath';
 import { Project } from '@/features/about-me/model';
-import { LinkIcon } from '@/shared/assets/icons';
+import { showDrawer } from '@/shared/components/Drawer';
+import { ProjectLink } from '@/entities/about-me/ui';
+import { AboutProjectDrawer } from '../AboutProjectDrawer';
 import styles from './styles.module.scss';
 
 interface Props {
@@ -10,11 +13,20 @@ interface Props {
 }
 
 export const ProjectCard = memo(({ item }: Props) => {
-  const { name, id, link, linkPreview, logoUrl } = item;
-  const t = useTranslations('landing.projects');
+  const { name, id, logoUrl } = item;
+  const t = useTranslations(`landing.projects.list.${id}`);
+  const othersT = useTranslations('landing.projects.others');
+
+  const handleOpenProject = useCallback(() => {
+    showDrawer(<AboutProjectDrawer project={item}/>);
+  }, [item]);
 
   return (
-    <div className={styles.root}>
+    <button
+      type='button'
+      className={styles.root}
+      onClick={handleOpenProject}
+    >
       <img
         className={styles.previewImg}
         src={getAssetPath(logoUrl)}
@@ -22,26 +34,12 @@ export const ProjectCard = memo(({ item }: Props) => {
       />
       <div className={styles.about}>
         <span className={styles.name}>{name}</span>
-        <p className={styles.description}>{t(`descriptions.${id}`)}</p>
+        <p className={styles.description}>{t('short_description')}</p>
       </div>
-      <div className={styles.actions}>
-        <LinkIcon
-          width={24}
-          height={24}
-          className={styles.icon}
-        />
-        {link ? (
-          <a
-            href={link}
-            className={styles.link}
-            target='_blank'
-          >
-            {linkPreview || link}
-          </a>
-        ) : <span className={styles.link}>{t('status.in_progress')}</span>}
-      </div>
-    </div>
-  );
+      <ProjectLink link={item.link} linkPreview={item.linkPreview}/>
+      <span className={styles.link}>{othersT('actions.show_more')}</span>
+    </button>
+    );
 });
 
 ProjectCard.displayName = 'ProjectCard';
