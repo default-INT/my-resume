@@ -1,0 +1,15 @@
+.root {
+  --card-background-color: var(--gray-lightest-2);
+  --card-text-color: var(--secondary-default);
+
+  @media (prefers-color-scheme: dark) {
+    --card-background-color: var(--gray-darker);
+    --card-text-color: var(--secondary-light);
+  }
+
+  padding: 4px 8px;
+  display: flex;
+  background: var(--card-background-color);
+  color: var(--card-text-color);
+  font-weight: 400;
+}

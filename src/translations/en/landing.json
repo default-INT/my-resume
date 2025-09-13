@@ -36,11 +36,81 @@
   },
   "projects": {
     "title": "Latest projects",
-    "descriptions": {
-      "roolz": "Roolz is a logistics platform that connects shippers and carriers, enabling cargo matching, bidding, and efficient shipment management. It optimizes costs and time while supporting both spot and long-term partnerships.",
-      "aibohealth": "Aibolit is a platform that helps surgeons manage surgery cases, work with CT files, and generate 3D models. It also enables uploading and editing surgery videos, which can be AI-annotated by phases and events, making it easier to review similar cases and create detailed reports with analytics.",
-      "getswap": "GetSwap is an app for creating item cards, uploading photos, and exchanging items with others. It offers easy browsing, category filters, and built-in chat to arrange swaps.",
-      "ecw": "Education Cannot Wait is a service for remote learning where users register as Teachers or Students. Teachers create groups, assign and track tasks, while students complete and submit them for approval."
+    "list": {
+      "roolz": {
+        "short_description": "Roolz is a logistics platform that connects shippers and carriers, enabling cargo matching, bidding, and efficient shipment management. It optimizes costs and time while supporting both spot and long-term partnerships.",
+        "description": "<p>Roolz is an ecosystem platform that provides participants in the freight transportation market with the ability\nto find cargo and vehicles, create offers, participate in bidding, and manage logistics processes. Users can\nsearch for carriers and shippers, exchange messages via a built-in messenger, and access a company\ndirectory.</p><p>Additionally, the platform supports automatic vehicle matching for cargo, cost and time optimization, and\nenables the establishment of long-term partnerships by creating private exchanges for collaboration with\ntrusted counterparties. Roolz helps efficiently organize both spot and contract shipments, offering analytics\nand tools to enhance business productivity in the logistics sector.</p>",
+        "responsibilities": [
+          "Carefully analyzed business requirements and user needs to develop intuitive and responsive interfaces\nin React, ensuring convenient cargo search, bidding management, and partner collaboration",
+          "Developed and maintained high-performance frontend components, enhancing the user experience with\nthe company directory, analytics, and automatic vehicle matching features.",
+          "Collaborated with the product team to identify bottlenecks in logistics processes and proposed solutions\nto improve efficiency through enhanced interface design and platform functionality.",
+          "Integrated the frontend with the backend via REST APIs, ensuring the stability of complex features such\nas private exchange creation and spot shipment handling.",
+          "Developed and integrated third-party applications for our partners, ensuring compatibility with the Roolz\nplatform and expanding functionality for the freight ecosystem."
+        ]
+      },
+      "aibohealth": {
+        "short_description": "Aibolit is a platform that helps surgeons manage surgery cases, work with CT files, and generate 3D models. It also enables uploading and editing surgery videos, which can be AI-annotated by phases and events, making it easier to review similar cases and create detailed reports with analytics.",
+        "description": "<p>Aibolit is an ecosystem platform, that gives the surgeons the ability to create surgery cases, upload, view and\nedit corresponding computed tomography (\nCT) files, and receive 3D models derived from\nCTs. In addition,\nsurgeons can upload, record and edit surgery videos and get them annotated with procedure phases and\nevents(supported by AI detection), so they are able to review annotated videos in case of identical surgeries\nand generate reports with advanced analytics and statistics data.</p>",
+        "achievements": [
+          "Developed a well-structured, maintainable and easy to understand application frontend while adhering to\nthe defined coding standards.",
+          "Implemented functionality for MS Teams App along the development of teleconference.",
+          "Implemented designs that work across all modern desktop and mobile browsers.",
+          "Developed dynamic sagas/reducers injections into Redux store.",
+          "Performed microfrontends implementation which significantly improved code deployments process.",
+          "Participated in daily meetings, refinement sessions, planning sessions and analysis of requirements.",
+          "Performed independent code reviews."
+        ]
+      },
+      "getswap": {
+        "short_description": "GetSwap is an app for creating item cards, uploading photos, and exchanging items with others. It offers easy browsing, category filters, and built-in chat to arrange swaps.",
+        "description": "<p>GetSwap is a platform-based app that lets users create item cards, upload and edit photos, and exchange\nitems with others. Photos can be taken via camera or selected from the gallery, with built-in tools for cropping\nand framing.</p><p>The app features smooth UI animations and an intuitive interface. Users can browse items, filter by category,\nand chat with others to arrange swaps. Each item has its own card with photos and descriptions, making\ndiscovery easy and engaging.</p>",
+        "responsibilities": [
+          "Architected and delivered a custom cross‑platform UI Kit from scratch, exposing reusable React Native\ncomponents and binding them to react-hook-form with a thin abstraction layer for unified validation and\ninstant form scaffolding across the app",
+          "Developed backend functionality using Express.js and MongoDB, implementing REST endpoints for item\ncreation and swap matching, while adhering to clean architecture principles",
+          "Implemented advanced photo workflows (camera capture, gallery import, cropping, compression) using\nexpo‑camera and native modules.",
+          "Orchestrated state and data layer with Zustand and react‑query, enabling offline support and automatic\ndelta syncing when connectivity is restored.",
+          "Implemented local state persistence using Realm to support offline mode and ensure smooth app\nperformance in low-connectivity environments, enabling instant access to cached data and reducing API\ndependency."
+        ]
+      },
+      "ecw": {
+        "short_description": "Education Cannot Wait is a service for remote learning where users register as Teachers or Students. Teachers create groups, assign and track tasks, while students complete and submit them for approval.",
+        "description": "<p>Education\nC\nannot Wait is a service that provides remote children’s education. A user can register as a\nTeacher or as a Student. Teachers can create Students Groups, home tasks and assign tasks to the Students\nor the Groups. They also monitor classes and deadlines in the calendar, edit personal data, etc. The students\nget their home tasks and send them for approval.</p>",
+        "responsibilities": [
+          "Successfully developed and deployed a React/React Native mobile application using TypeScript, Apollo/GraphQL, and Firebase technologies.",
+          "Developed a responsive UI design with React/React Native components that allowed for easy navigation and user engagement.",
+          "Implemented user authentication and authorization features with support for multiple user roles.",
+          "Utilized Apollo Client and GraphQL to optimize data fetching and caching, improving application performance and reducing load times for users.",
+          "Ensured high code quality and adherence to best practices through regular code reviews.",
+          "Conducted requirements analysis."
+        ]
+      }
+    },
+    "others": {
+      "present": "Present",
+      "articles": {
+        "tech_stack": "Tech Stack",
+        "about": "About",
+        "responsibilities": "Responsibilities",
+        "achievements": "Achievements",
+        "others": "Others"
+      },
+      "period": {
+        "from": "Started: { value }",
+        "to": "Finished: { value }"
+      },
+      "team_members": {
+        "title": "Team members",
+        "value": "{ value }+ people"
+      },
+      "business_process": {
+        "title": "Business process"
+      },
+      "status": {
+        "in_progress": "In Progress"
+      },
+      "actions": {
+        "show_more": "Show more"
+      }
     },
     "status": {
       "in_progress": "In Progress"

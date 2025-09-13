@@ -1,0 +1,46 @@
+@use '@/shared/styles/mixins.scss' as *;
+
+.actions {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.icon {
+  --background-circle-color: var(--secondary-lighter);
+  --icon-path-color: var(--secondary-default);
+
+  @media (prefers-color-scheme: dark) {
+    --background-circle-color: var(--secondary-dark);
+    --icon-path-color: var(--secondary-light);
+  }
+
+  rect {
+    fill: var(--background-circle-color);
+  }
+
+  path {
+    fill: var(--icon-path-color);
+  }
+}
+
+.link {
+  --label-color: var(--secondary-default);
+  --link-color-hover: var(--secondary-light);
+
+  @media (prefers-color-scheme: dark) {
+    --label-color: var(--secondary-light);
+    --link-color-hover: var(--secondary-default);
+  }
+
+  color: var(--label-color);
+  font-weight: 500;
+
+  &:hover {
+    color: var(--link-color-hover);
+  }
+
+  @include max-mobile-sm() {
+    font-size: 12px;
+  }
+}

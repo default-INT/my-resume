@@ -130,12 +130,12 @@
 }
 
 .sectionTitle {
-  --section-title-color: var(--gray-default);
+  --period-text-color: var(--gray-default);
 
   @media (prefers-color-scheme: dark) {
-    --section-title-color: var(--gray-light);
+    --period-text-color: var(--gray-light);
   }
 
   font-size: 14px;
-  color: var(--section-title-color);
+  color: var(--period-text-color);
 }
